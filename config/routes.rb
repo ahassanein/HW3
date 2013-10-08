@@ -14,6 +14,7 @@ Rottenpotatoes::Application.routes.draw do
   #   resources :products
   resources :movies
   resources :users
+  resources :sessions
 
   # Sample resource route with options:
   #   resources :products do
