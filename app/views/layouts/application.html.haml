@@ -6,15 +6,10 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
-
-  <%= button_to 'Signup/ Login', 
-      :action => 'post', 
-      :controller => 'users', 
-      :form => {:user => current_user} %>
-
   %body
     %h1.title Rotten Potatoes!
     #main
+      = button_to 'Signup/ Login', new_user_path, :method => :get
       - if flash[:notice]
         #notice.message= flash[:notice]
       - elsif flash[:warning]
